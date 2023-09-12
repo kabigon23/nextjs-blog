@@ -12,7 +12,7 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>안녕하세요 꼬꼬의 블로그의 오신 것을 환영합니다.</p>
+        <p>안녕하세요 국밥의 블로그의 오신 것을 환영합니다.</p>
         <p>
           이 블로그는 Next.js로 만들어졌습니다.
         </p>

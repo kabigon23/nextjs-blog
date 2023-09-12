@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = "꼬꼬";
-export const siteTitle = "꼬꼬의 블로그"
+const name = "Gukbab";
+export const siteTitle = "Gukbab's warehouse";
 
 export default function Layout({ children, home }) {
     return (
@@ -26,46 +26,43 @@ export default function Layout({ children, home }) {
             <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <header className={styles.header}>
-            {home ? (
-                <>
-                    <Image
-                        priority
-                        src="/images/profile.jpeg"
-                        className={utilStyles.borderCircle}
-                        height={144}
-                        width={144}
-                        alt="홈용 프로필사진입니다." 
-                    />
-                    <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                </>
-            ) : (
-                <>
-                    <Link href="/">
+            <>
+                <Link href="/">
+                    <div className={utilStyles.padding10pxl}>
                         <Image
                             priority
                             src="/images/profile.jpeg"
                             className={utilStyles.borderCircle}
-                            height={108}
-                            width={108}
+                            height={60}
+                            width={60}
                             alt="페이지용 프로필사진입니다." 
                         />
-                    </Link>
-                    <h2 className={utilStyles.headingLg}>
-                        <Link href="/" className={utilStyles.colorInherit}>
-                            {name}
-                        </Link>
-                    </h2>
-                </>
-            )}
-        </header>
-        <main>{children}</main>
-        {!home && (
-            <div className={styles.backTohome}>
-                <Link href="/">
-                    홈으로 돌아가기
+                    </div>
                 </Link>
-            </div>
-        )}    
+
+                <h2 className={`${utilStyles.headingLg} ${utilStyles.padding10pxl} ${utilStyles.whiteText}`}>
+                    <Link href="/" className={utilStyles.colorInherit}>
+                        {siteTitle}
+                    </Link>
+                </h2>
+            </>
+        </header>
+        
+        <nav className={styles.nav}>
+            <>
+                <Link href="/posts" className={`${utilStyles.headingMd} ${utilStyles.blackText}`}>posts</Link>
+            </>
+        </nav>
+        <div className={styles.contents}>
+            <main>{children}</main>
+            {!home && (
+                <div className={styles.backTohome}>
+                    <Link href="/">
+                        홈으로 돌아가기
+                    </Link>
+                </div>
+            )}
+        </div>    
         
     </div>
     )
