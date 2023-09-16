@@ -2,9 +2,13 @@ import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
+import Link from 'next/link';
 import utilStyles from '../../styles/utils.module.css';
 
 export default function Post({postData}) {
+    const tagList = () => postData.tags.map(tag => (
+        <div key={tag}>{tag}</div>
+    ));
     return (
     <Layout>
         <Head>
@@ -15,8 +19,15 @@ export default function Post({postData}) {
             <div className={utilStyles.lightText}>
             <Date dateString={postData.date} />
             </div>
+            <div className={utilStyles.gap}>
+                Tags: {tagList()}
+            </div>
+            
             <div dangerouslySetInnerHTML={{__html: postData.contentHtml}} />
         </article>
+        <Link href="/posts">
+                        전체글 보기
+        </Link>
     </Layout>
     );
 }

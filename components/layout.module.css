@@ -18,3 +18,8 @@
 .backTohome {
     margin: 3rem 0 0;
 }
+.view {
+    margin: 5px 0;
+    display: flex;
+    gap: 10px;
+}

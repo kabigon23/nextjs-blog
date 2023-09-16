@@ -76,3 +76,8 @@
   display: flex;
   justify-content: center;
 }
+
+.gap {
+  display: flex;
+  gap: 5px;
+}
