@@ -14,8 +14,9 @@ export default function Post({ postData }) {
     useEffect(() => {
         const codeBlocks = document.querySelectorAll('pre code');
         codeBlocks.forEach((block) => {
+            const preElement = block.parentNode;
             // 이미 버튼이 추가되어 있으면 스킵
-            if (block.parentNode.querySelector('.copyButton')) return;
+            if (preElement.parentNode.querySelector('.copyButton')) return;
 
             const button = document.createElement('button');
             button.className = utilStyles.copyButton;
@@ -30,8 +31,13 @@ export default function Post({ postData }) {
                     }, 2000);
                 });
             });
-            block.parentNode.classList.add(utilStyles.codeContainer);
-            block.parentNode.insertBefore(button, block);
+            preElement.classList.add(utilStyles.codeContainer);
+            preElement.insertBefore(button, block);
+
+            preElement.addEventListener('scroll', () => {
+                // 스크롤이 발생할 때마다 버튼의 right 값을 조절
+                button.style.right = (5 - preElement.scrollLeft) + 'px';
+            });
         });
     }, [postData]);
 
@@ -51,6 +57,7 @@ export default function Post({ postData }) {
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
             <Link href="/posts">전체글 보기</Link>
+            
         </Layout>
     );
 }

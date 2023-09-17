@@ -87,12 +87,14 @@
 
 .copyButton {
   position: absolute;
-  top: 5px;
+  top: 2px;
   right: 5px;
+  z-index: 1000;
   background: gray;
   color: white;
 }
 
 .codeContainer {
   position: relative;
+  overflow-x: scroll;
 }
