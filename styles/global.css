@@ -25,3 +25,8 @@ img {
   max-width: 100%;
   display: block;
 }
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
