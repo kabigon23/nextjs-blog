@@ -4,9 +4,11 @@ import styles from './postthumbnail.module.css';
 
 export default function PostThumbnail ({id, date, title, tagList }) {
     return (
+        
         <div className={styles.container}>
+            <Link href={`/posts/${id}`}>
             <div className={styles.title}>
-                <Link href={`/posts/${id}`}>{title}</Link>
+                {title}
             </div>
             <div className={styles.tags}>
                 {tagList}
@@ -14,7 +16,8 @@ export default function PostThumbnail ({id, date, title, tagList }) {
             <div className={styles.date}>
                 <Date dateString={date} />
             </div>
-            
+            </Link>    
         </div>
+        
     )
 }

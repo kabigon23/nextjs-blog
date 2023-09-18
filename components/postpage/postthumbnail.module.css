@@ -2,29 +2,39 @@
     border: 1px solid black; /* 검정색 테두리를 추가합니다. */
     border-radius: 5px;     /* 꼭지점을 살짝 둥글게 만듭니다. 값은 원하는대로 조절 가능합니다. */
     padding: 0.5rem;
+    text-decoration: none; /* 필요하면 밑줄을 제거 */
+    color: black;
+    
+}
+.container:hover {
+    background-color: #b2e4e6; /* 연한 청록색 값, 원하는 값으로 조절하세요 */
+}
+
+.container a:hover {
+    text-decoration: none;
     
 }
 .title {
     border-bottom: 1px solid black;
     text-align: right;
+    color: black;
 }
-.title a {
-    color: black; /* 링크의 기본 색상을 검정색으로 설정 */
-    text-decoration: none; /* 필요하면 밑줄을 제거 */
-}
+
 .container:active {
     background-color: #B0E0E6; /* 연한 청록색으로 설정 */
 }
 
 .date {
     text-align: right;      /* 텍스트를 오른쪽 정렬 */
-    font-size: 0.8em;       /* 글씨 크기를 기본보다 20% 작게 설정 */
+    font-size: 0.8em;
+    color: black;       
 }
 .tags {
     margin-top: 5px;
     display: flex;       /* flexbox 사용 */
     flex-wrap: wrap;     /* 필요시 줄 바꿈 */
     gap: 10px;           /* 태그 간 간격 설정 (가로 및 세로 간격) */
+    justify-content: flex-end;
 }
 
 .tags > div {
