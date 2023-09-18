@@ -13,7 +13,7 @@ export default function TagPosts({ data }) {
             setTagval(prevTags => [...prevTags, tag]);
         }
     };
-    // const tagedPosts = posts.filter(({ tags }) => tags.includes(tagval));
+    
     const tagedPosts = posts.filter(post =>
         tagval.every(tag => post.tags.includes(tag))
     );

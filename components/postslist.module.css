@@ -1,4 +1,12 @@
-.tagList {
-    display: flex;
-    gap: 5px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInEffect {
+    animation: fadeIn 0.5s ease-in-out forwards;
 }

@@ -1,0 +1,38 @@
+.container {
+    border: 1px solid black; /* 검정색 테두리를 추가합니다. */
+    border-radius: 5px;     /* 꼭지점을 살짝 둥글게 만듭니다. 값은 원하는대로 조절 가능합니다. */
+    padding: 0.5rem;
+    
+}
+.title {
+    border-bottom: 1px solid black;
+    text-align: right;
+}
+.title a {
+    color: black; /* 링크의 기본 색상을 검정색으로 설정 */
+    text-decoration: none; /* 필요하면 밑줄을 제거 */
+}
+.container:active {
+    background-color: #B0E0E6; /* 연한 청록색으로 설정 */
+}
+
+.date {
+    text-align: right;      /* 텍스트를 오른쪽 정렬 */
+    font-size: 0.8em;       /* 글씨 크기를 기본보다 20% 작게 설정 */
+}
+.tags {
+    margin-top: 5px;
+    display: flex;       /* flexbox 사용 */
+    flex-wrap: wrap;     /* 필요시 줄 바꿈 */
+    gap: 10px;           /* 태그 간 간격 설정 (가로 및 세로 간격) */
+}
+
+.tags > div {
+    color: white;              /* 글자색을 흰색으로 */
+    background-color: orange; /* 배경색을 주황색으로 */
+    padding: 2px 10px;        /* 상하로는 8px, 좌우로는 16px의 패딩 */
+    border-radius: 25px;      /* 타원형 모양을 위한 경계선 반지름 */
+    display: inline-block;    /* 인라인 블록 요소로 설정 */
+    text-align: center;       /* 글자를 중앙에 정렬 */
+    font-size: 0.8em;
+}
