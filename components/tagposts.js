@@ -17,17 +17,7 @@ export default function TagPosts({ data }) {
     const tagedPosts = posts.filter(post =>
         tagval.every(tag => post.tags.includes(tag))
     );
-    const getUniqueTags = (posts) => {
-        let tagsSet = new Set();
-
-        posts.forEach(post => {
-            post.tags.forEach(tag => {
-                tagsSet.add(tag);
-            });
-        });
-
-        return [...tagsSet];
-    }
+    
     const uniqueTags = getUniqueTags(posts);
     return (
         <div>
@@ -45,4 +35,16 @@ export default function TagPosts({ data }) {
             <PostsList posts={tagedPosts} />
         </div>
     );
+}
+
+export const getUniqueTags = (posts) => {
+    let tagsSet = new Set();
+
+    posts.forEach(post => {
+        post.tags.forEach(tag => {
+            tagsSet.add(tag);
+        });
+    });
+
+    return [...tagsSet];
 }

@@ -20,7 +20,7 @@ export default function Posts({ allPostsData }) {
     return (
         <Layout>
             <Head>
-                <title>포스트</title>
+                <title>국밥의 포스트</title>
             </Head>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
                 <div className={styles.view}>
