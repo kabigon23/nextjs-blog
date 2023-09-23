@@ -33,13 +33,14 @@ export default function Post({ postData }) {
             </Head>
             <article>
                 <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
                 <div className={utilStyles.lightText}>
                     <Date dateString={postData.date} />
                 </div>
                 <div className={utilStyles.gap}>
-                    Tags: {tagList()}
+                    태그: {tagList()}
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
             <Link href="/posts">전체글 보기</Link>
             
