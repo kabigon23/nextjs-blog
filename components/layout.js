@@ -9,6 +9,7 @@ export const siteTitle = "국밥의 개발창고";
 
 export default function Layout({ children, home }) {
     return (
+    <div className={styles.outerContainer}>
     <div className={styles.container}>
         <Head>
             <link rel="icon" href="/favicon.ico" />
@@ -63,8 +64,12 @@ export default function Layout({ children, home }) {
                     </Link>
                 </div>
             )}
+        </div>
+        <div className={styles.bottom}>
+            © 2023. 국밥의 개발창고 all rights reserved.
         </div>    
         
+    </div>
     </div>
     )
 }
