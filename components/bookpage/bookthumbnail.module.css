@@ -1,0 +1,40 @@
+
+
+.container {
+    border: 1px solid black; /* 검정색 테두리를 추가합니다. */
+    border-radius: 5px;     /* 꼭지점을 살짝 둥글게 만듭니다. 값은 원하는대로 조절 가능합니다. */
+    padding: 0.5rem;
+    text-decoration: none; /* 필요하면 밑줄을 제거 */
+    display: flex;
+    position: relative;
+    
+}
+.container:hover {
+    background-color: #b2e4e6; /* 연한 청록색 값, 원하는 값으로 조절하세요 */
+}
+
+
+.title {
+    text-align: left;
+    color: black;
+    margin-left:10px;
+}
+
+.author {
+    text-align: right;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.publisher {
+    text-align: right;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.info {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+

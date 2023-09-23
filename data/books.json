@@ -1,0 +1,172 @@
+[
+  {
+    "title": "파이썬 프로그래밍 (입문부터 실무까지 한 방에 끝내는)",
+    "link": "https://search.shopping.naver.com/book/catalog/32491898647",
+    "image": "https://shopping-phinf.pstatic.net/main_3249189/32491898647.20220527053944.jpg",
+    "author": "김용",
+    "publisher": "혜지원",
+    "pubfate": "20160331",
+    "isbn": "9788983798879",
+    "review": false
+  },
+  {
+    "title": "혼자 공부하는 컴퓨터 구조+운영체제 (1:1 과외하듯 배우는 컴퓨터공학 자습서)",
+    "link": "https://search.shopping.naver.com/book/catalog/33824626625",
+    "image": "https://shopping-phinf.pstatic.net/main_3382462/33824626625.20230627104236.jpg",
+    "author": "강민철",
+    "publisher": "한빛미디어",
+    "pubfate": "20220816",
+    "isbn": "9791162243091",
+    "review": false
+  },
+  {
+    "title": "1년 안에 AI 빅데이터 전문가가 되는 법 (4차 산업혁명 시대의 최고의 직업)",
+    "link": "https://search.shopping.naver.com/book/catalog/32464144798",
+    "image": "https://shopping-phinf.pstatic.net/main_3246414/32464144798.20230516164317.jpg",
+    "author": "서대호",
+    "publisher": "반니",
+    "pubfate": "20200225",
+    "isbn": "9791190467117",
+    "review": false
+  },
+  {
+    "title": "모두의 알고리즘 with 파이썬 (컴퓨팅 사고를 위한 기초 알고리즘)",
+    "link": "https://search.shopping.naver.com/book/catalog/32436282485",
+    "image": "https://shopping-phinf.pstatic.net/main_3243628/32436282485.20230912084447.jpg",
+    "author": "이승찬",
+    "publisher": "길벗",
+    "pubfate": "20170518",
+    "isbn": "9791160501728",
+    "review": false
+  },
+  {
+    "title": "비전공자를 위한 이해할 수 있는 IT 지식 (IT시대의 필수 교양서)",
+    "link": "https://search.shopping.naver.com/book/catalog/32491415727",
+    "image": "https://shopping-phinf.pstatic.net/main_3249141/32491415727.20230919123406.jpg",
+    "author": "최원영",
+    "publisher": "티더블유아이지",
+    "pubfate": "20200714",
+    "isbn": "9791196918033",
+    "review": false
+  },
+  {
+    "title": "CODE (하드웨어와 소프트웨어에 숨어 있는 언어)",
+    "link": "https://search.shopping.naver.com/book/catalog/32438294689",
+    "image": "https://shopping-phinf.pstatic.net/main_3243829/32438294689.20230808084604.jpg",
+    "author": "찰스 펫졸드",
+    "publisher": "인사이트",
+    "pubfate": "20150125",
+    "isbn": "9788966261253",
+    "review": false
+  },
+  {
+    "title": "밑바닥부터 시작하는 딥러닝 (파이썬으로 익히는 딥러닝 이론과 구현)",
+    "link": "https://search.shopping.naver.com/book/catalog/32486532054",
+    "image": "https://shopping-phinf.pstatic.net/main_3248653/32486532054.20230404163646.jpg",
+    "author": "사이토 고키",
+    "publisher": "한빛미디어",
+    "pubfate": "20170103",
+    "isbn": "9788968484636",
+    "review": false
+  },
+  {
+    "title": "페도라 리눅스 활용과 네트워크 서버",
+    "link": "https://search.shopping.naver.com/book/catalog/32466639027",
+    "image": "https://shopping-phinf.pstatic.net/main_3246663/32466639027.20230214162630.jpg",
+    "author": "이광^김봉근",
+    "publisher": "글로벌",
+    "pubfate": "20160725",
+    "isbn": "9788955027150",
+    "review": false
+  },
+  {
+    "title": "C언어 코딩 도장 (따라하기, 연습하기, 심사하기로 배우는 C 언어 프로그래밍)",
+    "link": "https://search.shopping.naver.com/book/catalog/32441659681",
+    "image": "https://shopping-phinf.pstatic.net/main_3244165/32441659681.20230214163823.jpg",
+    "author": "남재윤",
+    "publisher": "길벗",
+    "pubfate": "20160630",
+    "isbn": "9791187345282",
+    "review": false
+  },
+  {
+    "title": "파이썬을 이용한 머신러닝, 딥러닝 실전 개발 입문",
+    "link": "https://search.shopping.naver.com/book/catalog/32480762980",
+    "image": "https://shopping-phinf.pstatic.net/main_3248076/32480762980.20230313190234.jpg",
+    "author": "쿠지라 히코우즈쿠에",
+    "publisher": "위키북스",
+    "pubfate": "20191210",
+    "isbn": "9791158391799",
+    "review": false
+  },
+  {
+    "title": "Do it! 지옥에서 온 문서관리자 깃&깃허브 입문",
+    "link": "https://search.shopping.naver.com/book/catalog/32470446380",
+    "image": "https://shopping-phinf.pstatic.net/main_3247044/32470446380.20221019150321.jpg",
+    "author": "이고잉",
+    "publisher": "이지스퍼블리싱",
+    "pubfate": "20191206",
+    "isbn": "9791163031222",
+    "review": false
+  },
+  {
+    "title": "모두의 아두이노 (누구나 쉽게 배우는 전자 회로 공작과 사물 인터넷 프로그래밍)",
+    "link": "https://search.shopping.naver.com/book/catalog/32458424868",
+    "image": "https://shopping-phinf.pstatic.net/main_3245842/32458424868.20221230071842.jpg",
+    "author": "다카모토 다카요리",
+    "publisher": "길벗",
+    "pubfate": "20160613",
+    "isbn": "9791187345206",
+    "review": false
+  },
+  {
+    "title": "파이썬과 리액트를 활용한 주식 자동 거래 시스템 구축",
+    "link": "https://search.shopping.naver.com/book/catalog/32440898722",
+    "image": "https://shopping-phinf.pstatic.net/main_3244089/32440898722.20230919122301.jpg",
+    "author": "박재현",
+    "publisher": "위키북스",
+    "pubfate": "20200212",
+    "isbn": "9791158391881",
+    "review": false
+  },
+  {
+    "title": "해킹 맛보기 (화이트햇 해커를 꿈꾸는 이들을 위한 해킹 입문서)",
+    "link": "https://search.shopping.naver.com/book/catalog/32471709723",
+    "image": "https://shopping-phinf.pstatic.net/main_3247170/32471709723.20230822102244.jpg",
+    "author": "박찬암",
+    "publisher": "에이콘출판",
+    "pubfate": "20150122",
+    "isbn": "9788960776425",
+    "review": false
+  },
+  {
+    "title": "HTTP & Network Basic (재미있게 배워보는 웹과 네트워크 입문)",
+    "link": "https://search.shopping.naver.com/book/catalog/32481453868",
+    "image": "https://shopping-phinf.pstatic.net/main_3248145/32481453868.20230905101713.jpg",
+    "author": "우에노 센",
+    "publisher": "영진닷컴",
+    "pubfate": "20150126",
+    "isbn": "9788931447897",
+    "review": false
+  },
+  {
+    "title": "인생 유니티 교과서 (유니티 게임 개발 탑티어 강의!)",
+    "link": "https://search.shopping.naver.com/book/catalog/32455957656",
+    "image": "https://shopping-phinf.pstatic.net/main_3245595/32455957656.20230829085502.jpg",
+    "author": "이영호",
+    "publisher": "성안당",
+    "pubfate": "20200515",
+    "isbn": "9788931556377",
+    "review": false
+  },
+  {
+    "title": "C# 스타터 (모바일, 게임, 메타버스 개발에 최적화된 프로그래밍 언어의 입문서)",
+    "link": "https://search.shopping.naver.com/book/catalog/32487056681",
+    "image": "https://shopping-phinf.pstatic.net/main_3248705/32487056681.20230418162556.jpg",
+    "author": "문기준",
+    "publisher": "성안북스",
+    "pubfate": "20211110",
+    "isbn": "9788970674100",
+    "review": false
+  }
+]

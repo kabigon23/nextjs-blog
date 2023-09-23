@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = "Gukbab";
-export const siteTitle = "Gukbab's warehouse";
+export const siteTitle = "국밥의 개발창고";
 
 export default function Layout({ children, home }) {
     return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
             <link rel="icon" href="/favicon.ico" />
             <meta
                 name="description"
-                content="꼬꼬의 간단한 블로그입니다." 
+                content="국밥의 개발창고입니다." 
             />
             <meta
                 property="og:image"
@@ -31,7 +31,7 @@ export default function Layout({ children, home }) {
                     <div className={utilStyles.padding10pxl}>
                         <Image
                             priority
-                            src="/images/profile.jpeg"
+                            src="/images/gukbab.jpeg"
                             className={utilStyles.borderCircle}
                             height={60}
                             width={60}
@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
                     </div>
                 </Link>
 
-                <h2 className={`${utilStyles.headingLg} ${utilStyles.padding10pxl} ${utilStyles.whiteText}`}>
+                <h2 className={`${utilStyles.headingLg} ${utilStyles.padding10pxl}`}>
                     <Link href="/" className={utilStyles.colorInherit}>
                         {siteTitle}
                     </Link>
@@ -50,7 +50,8 @@ export default function Layout({ children, home }) {
         
         <nav className={styles.nav}>
             <>
-                <Link href="/posts" className={`${utilStyles.headingMd} ${utilStyles.blackText}`}>posts</Link>
+                <Link href="/posts" className={`${utilStyles.headingMd} ${utilStyles.blackText}`}>포스트</Link>
+                <Link href="/books" className={`${utilStyles.headingMd} ${utilStyles.blackText}`}>서재</Link>
             </>
         </nav>
         <div className={styles.contents}>

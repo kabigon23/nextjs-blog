@@ -10,7 +10,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>안녕하세요 국밥의 블로그의 오신 것을 환영합니다.</p>
+        <p>안녕하세요 국밥의 개발창고에 오신 것을 환영합니다.</p>
         <div className={utilStyles.alignCenter}>
           <Image
             priority
