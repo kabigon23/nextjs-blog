@@ -6,8 +6,8 @@ const WordSphereComponent = ({ texts }) => {
     const counts = [1, 2, 4, 5, 4, 2, 1];
     const options = {
         tilt: Math.PI / 9,
-        initialVelocityX: 0.09,
-        initialVelocityY: 0.09,
+        initialVelocityX: 0.3,
+        initialVelocityY: 0.3,
         initialRotationX: Math.PI * 0.14,
         initialRotationZ: 0,
     };
@@ -54,6 +54,7 @@ const wordSphere = (canvas, texts, counts, options) => {
 
     // scrolling
     let clicked = false, lastX, lastY;
+    let dx =0, dy=0;
     canvas.addEventListener('mousedown', event => {
         clicked = true;
         lastX = event.screenX;
