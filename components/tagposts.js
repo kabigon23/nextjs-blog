@@ -3,9 +3,11 @@ import PostsList from "./postslist";
 import tagPostsStyles from "./tagposts.module.css";
 import utilStyles from "../styles/utils.module.css";
 
-export default function TagPosts({ data }) {
+export default function TagPosts({ data, paramsTag }) {
+
     const posts = data;
-    const [tagval, setTagval] = useState([]);
+    const [tagval, setTagval] = useState(paramsTag ? [paramsTag]: []);
+
     const handleTagClick = (tag) => {
         if (tagval.includes(tag)) {
             setTagval(prevTags => prevTags.filter(t => t !== tag));

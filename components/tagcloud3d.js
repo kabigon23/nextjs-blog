@@ -28,11 +28,10 @@ const WordSphereComponent = ({ texts }) => {
 
 const wordSphere = (canvas, texts, counts, options, router) => {
     let highlightedText = null;
-    const wordLinks = {
-        '자바스크립트': '#',
-        '일상': '#',
-        // ... (and so on)
-    };
+    const wordLinks = texts.reduce((acc, text) => {
+        acc[text] = `/posts/tags/${text}`;
+        return acc;
+    }, {});
     let wordPositions = [];  // 6. 단어 위치 저장
 
     const π = Math.PI; // happy math!
@@ -109,12 +108,12 @@ const wordSphere = (canvas, texts, counts, options, router) => {
         const rect = canvas.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
-    
+
         for (const { text, x: wordX, y: wordY, width, height } of wordPositions) {
             if (
-                x >= wordX - width && 
-                x <= wordX + width && 
-                y >= wordY && 
+                x >= wordX - width &&
+                x <= wordX + width &&
+                y >= wordY &&
                 y <= wordY + height
             ) {
                 const link = wordLinks[text];
@@ -126,13 +125,13 @@ const wordSphere = (canvas, texts, counts, options, router) => {
             }
         }
     });
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
 
 
     function rot(x, y, t) {
@@ -173,7 +172,7 @@ const wordSphere = (canvas, texts, counts, options, router) => {
             wordPositions.push({
                 text,
                 x: wordX,
-                y: wordY - size ,
+                y: wordY - size,
                 width: ctx.measureText(text).width, // 텍스트의 너비를 저장
                 height: size // 텍스트의 높이를 저장
             });
@@ -182,7 +181,7 @@ const wordSphere = (canvas, texts, counts, options, router) => {
             if (highlightedText === text) {
                 ctx.strokeStyle = 'red';
                 const metrics = ctx.measureText(text);
-                ctx.strokeRect(wordX, wordY - size +2, metrics.width, size);
+                ctx.strokeRect(wordX, wordY - size + 2, metrics.width, size);
             }
 
             ix--;
