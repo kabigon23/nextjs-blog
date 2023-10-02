@@ -32,5 +32,11 @@ img {
 
 pre {
   position: relative;
+  font-size: 14px !important;
 }
 
+br {
+  display: block;
+  margin-bottom: 8px;
+  content: "";
+}
