@@ -32,7 +32,7 @@ export default function Post({ postData }) {
                 <title>{postData.title}</title>
             </Head>
             <article>
-                <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+                <h1 className={utilStyles.headingLg}>{postData.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
                 <div className={utilStyles.lightText}>
