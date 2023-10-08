@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = "Gukbab";
-export const siteTitle = "국밥의 개발창고";
+const name = "Gukbabman";
+export const siteTitle = "국밥맨의 개발창고";
 
 export default function Layout({ children, home }) {
     return (
@@ -15,13 +15,11 @@ export default function Layout({ children, home }) {
             <link rel="icon" href="/favicon.ico" />
             <meta
                 name="description"
-                content="국밥의 개발창고입니다." 
+                content="국밥맨의 개발창고입니다." 
             />
             <meta
                 property="og:image"
-                content={`https://og-image.vercel.app/${encodeURI(
-                    siteTitle,
-                )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+                content="/images/gukbab_cartoon.png"
             />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
@@ -32,7 +30,7 @@ export default function Layout({ children, home }) {
                     <div className={utilStyles.padding10pxl}>
                         <Image
                             priority
-                            src="/images/gukbab.jpeg"
+                            src="/images/gukbab_cartoon.png"
                             className={utilStyles.borderCircle}
                             height={60}
                             width={60}
@@ -66,7 +64,7 @@ export default function Layout({ children, home }) {
             )}
         </div>
         <div className={styles.bottom}>
-            © 2023. 국밥의 개발창고 all rights reserved.
+            © 2023. 국밥맨의 개발창고 all rights reserved.
         </div>    
         
     </div>

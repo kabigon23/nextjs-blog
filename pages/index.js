@@ -14,12 +14,14 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>안녕하세요 국밥의 개발창고에 오신 것을 환영합니다.</p>
-        <div className={utilStyles.alignCenter} style={{ marginLeft: '-40px' }}>
+        <div className={utilStyles.alignCenter} style={{ marginLeft: '-40px' , marginTop: '20px'}}>
         <TagCloud3D 
         texts={tags}
         />
         </div>
+        <p className={utilStyles.lightText} style={{ marginTop: '0px', fontSize: '18px', textAlign: 'center'}}>
+          관심있는 태그를 클릭해주세요.
+        </p>
         
         
         <p>
