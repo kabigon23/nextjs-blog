@@ -28,10 +28,20 @@ const WordSphereComponent = ({ texts }) => {
 
 const wordSphere = (canvas, texts, counts, options, router) => {
     let highlightedText = null;
+    // 기존코드
+    // const wordLinks = texts.reduce((acc, text) => {
+    //     acc[text] = `/posts/tags/${text}`;
+    //     return acc;
+    // }, {});
+    // C# 예외처리
     const wordLinks = texts.reduce((acc, text) => {
-        acc[text] = `/posts/tags/${text}`;
+        // URL 부분에 들어갈 값을 결정
+        const urlSegment = text === 'C#' ? 'csharp' : text;
+
+        acc[text] = `/posts/tags/${urlSegment}`;
         return acc;
     }, {});
+    //------ 코드변경--------
     let wordPositions = [];  // 6. 단어 위치 저장
 
     const π = Math.PI; // happy math!

@@ -4,7 +4,11 @@ import tagPostsStyles from "./tagposts.module.css";
 import utilStyles from "../styles/utils.module.css";
 
 export default function TagPosts({ data, paramsTag }) {
-
+    // C# 예외처리 코드 추가
+    if (paramsTag == "csharp") {
+        paramsTag = "C#";
+    }
+    // ---------
     const posts = data;
     const [tagval, setTagval] = useState(paramsTag ? [paramsTag]: []);
 

@@ -40,9 +40,22 @@ export default function Tag({ allPostsData, paramsTag }) {
 export async function getStaticPaths() {
     const allPostsData = getSortedPostsData();
     const tags = getUniqueTags(allPostsData);
-    const paths = tags.map(tag => ({
+    // const를 let로 변경
+    let paths = tags.map(tag => ({
         params: { tag: tag.toString() }
     }));
+    // C# 예외처리를 위한 코드
+    paths = paths.map(path => {
+        if (path.params.tag === 'C#') {
+            return {
+                params: {
+                    tag: 'csharp'
+                }
+            };
+        }
+        return path;
+    });
+    // -- 코드추가------
     
     return {
         paths,
